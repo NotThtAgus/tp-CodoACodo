@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Kari Kolors</title>
+    <link rel="shortcut icon" href="./recursos/iconos/paint.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-home">
+            <a class="logoizq" href="./index.html"><img src="./recursos/Logo.png" alt="" style="height: 90px;"></a>
+            <button class="ham">
+                <span class="menuIcon material-icons">
+                  menu
+                </span>
+                <span class="xIcon material-icons">
+                    close
+                  </span>
+              </button>
+              <ul class="menu">
+                <li><a class="menuLink" href="./index.html">Inicio</a></li>
+                <li><a class="menuLink" href="./cursos.html">Cursos</a></li>
+                <li><a class="menuLink" href="./galeria.html">Galeria</a></li>
+                <li><a class="menuLink" href="./contacto.html">Contacto</a></li>
+                <li><a class="menuLink" href="./about.html">Sobre Nosotros</a></li>
+              </ul>
+            <div class="navegador">
+                <a href="./index.html" class="a-home">Inicio</a>
+                <a href="./cursos.html" class="a-home">Cursos</a>
+                <a href="./galeria.html" class="a-home">Galeria</a>
+                <a href="./contacto.html" class="a-home">Contacto</a>
+                <a href="./about.html" class="a-home">Sobre Nosotros</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="seccion_media">
+        <img src="./recursos/foto-media.jpg" >
+        <div class="media_info">
+            <img src="./recursos/Logo.png" style="width: 55%">
+            <p class="info">Desde hace cuatro años atrás el objetivo de este proyecto es crear un espacio donde los alumnos puedan desarrollar su estilo y su confianza para que el resultado de cada trabajo sea satisfactorio. Esto se reflejará en la imagen de los clientes.</p>
+        </div>
+    </div>
+
+    <div class="muestra">
+        <h2>Algunos de nuestros trabajos</h2>
+        <a href="./galeria.html"><input type="button" value="Ver más" id="botoncito"></a>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./recursos/car-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./recursos/car-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./recursos/car-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer>
+        <img src="./recursos/Logo.png" class="logo-footer" alt="">
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="./recursos/iconos/facebook-square.svg"></a>
+            <a href="https://www.instagram.com"><img src="./recursos/iconos/instagram.svg"></a>
+            <a href="https://www.twitter.com"><img src="./recursos/iconos/twitter.svg"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+    <script src="ham.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

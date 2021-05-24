@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos - Kari Kolors</title>
+    <link rel="shortcut icon" href="./recursos/iconos/paint.png" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="headout">
+        <a href="./index.html" class="logoizq"><img src="./recursos/Logo.png" alt="" style="height: 90px;"></a>
+        <button class="ham">
+            <span class="menuIcon material-icons">
+              menu
+            </span>
+            <span class="xIcon material-icons">
+                close
+              </span>
+          </button>
+          <ul class="menu">
+            <li><a class="menuLink" href="./index.html">Inicio</a></li>
+            <li><a class="menuLink" href="./cursos.html">Cursos</a></li>
+            <li><a class="menuLink" href="./galeria.html">Galeria</a></li>
+            <li><a class="menuLink" href="./contacto.html">Contacto</a></li>
+            <li><a class="menuLink" href="./about.html">Sobre Nosotros</a></li>
+          </ul>
+        <div class="nav-resto">
+            <a href="./index.html" class="a-resto">Inicio</a>
+            <a href="./cursos.html" class="a-resto">Cursos</a>
+            <a href="./galeria.html" class="a-resto">Galeria</a>
+            <a href="./contacto.html" class="a-resto">Contacto</a>
+            <a href="./about.html" class="a-resto">Sobre Nosotros</a>
+        </div>
+    </nav>
+    <form action="">
+        <div class="form-nombre">
+            <label for="nombre">Nombre: <br></label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="form-apellido">
+            <label for="apellido">Apellido: <br></label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+        </div>
+        <div class="form-mail">
+            <label for="mail">E-mail: <br></label>
+            <input type="email" id="mail" placeholder="Ingrese su correo electrónico." required>
+        </div>
+        <div class="form-telefono">
+            <label for="telefono">Número de telefono: <br></label>
+            <input type="tel" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" id="telefono" placeholder="Ingrese su numero de telefono." required>
+        </div>
+        <div class="form-tipo">
+            <label for="tipo">Motivo de contacto: <br></label>
+            <select id="tipo">
+                <option value="consulta">Consulta general</option>
+                <option value="turno">Turnos</option>
+                <option value="curso1">Curso: Peluqueria inicial</option>
+                <option value="curso2">Curso: Colorimetría avanzado</option>
+                <option value="curso3">Curso: Corte profesional</option>
+            </select>
+        </div>
+        <div class="form-comentario">
+            <label for="comentario">Comentario: <br></label>
+            <textarea id="comentario" placeholder="Ingrese su comentario." rows="10" cols="50" required></textarea>
+        </div>
+        <div class="form-boton">
+            <input type="submit" id="botoncito" value="Enviar">
+        </div>
+    </form>
+    <footer>
+        <img src="./recursos/Logo.png" class="logo-footer" alt="">
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="./recursos/iconos/facebook-square.svg"></a>
+            <a href="https://www.instagram.com"><img src="./recursos/iconos/instagram.svg"></a>
+            <a href="https://www.twitter.com"><img src="./recursos/iconos/twitter.svg"></a>
+        </div>
+    </footer>
+    <script src="ham.js"></script>
+</body>
+
+</html>
